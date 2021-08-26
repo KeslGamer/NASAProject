@@ -6,22 +6,22 @@
 @if (Model != null)
 {
 	<table class="table table-sm table-striped table-bordered m-2">
-        <tbody>
+		<tbody>
 		@foreach (var r in Model)
 		{
-		    <tr>
-                <td>
-                    <h1>@r.photos[0].earth_date</h1>
-                </td>
-            </tr>
-            @foreach (var s in r.photos)
-             {
-                 <tr>
-                     <td>
-                         <img src="@s.img_src">
-                     </td>
-                 </tr>
-             }
+			<tr>
+				<td>
+					<h1>@r.photos[0].earth_date</h1>
+				</td>
+			</tr>
+			@foreach (var s in r.photos)
+			 {
+				 <tr>
+					 <td>
+						 <img src="@s.img_src">
+					 </td>
+				 </tr>
+			 }
 		}
 		</tbody>
 	</table>
